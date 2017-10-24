@@ -23,7 +23,7 @@
 
 
     <ScrollView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_below="@+id/article_heading">
@@ -48,6 +48,11 @@
                 android:autoLink="web"
                 android:lineSpacingExtra="5sp"
                 android:text="@string/article_text" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Comment"/>
 
         </LinearLayout>
 
