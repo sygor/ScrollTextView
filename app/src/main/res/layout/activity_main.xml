@@ -20,23 +20,39 @@
         android:textAppearance="@android:style/TextAppearance.Large"
         android:textColor="@android:color/white" />
 
-    <TextView
-        android:id="@+id/article_subheading"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/article_heading"
-        android:layout_marginBottom="@dimen/deafult_margin"
-        android:text="@string/article_subtitle"
-        android:textAppearance="@android:style/TextAppearance" />
 
-    <TextView
-        android:id="@+id/article"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_below="@+id/article_subheading"
-        android:lineSpacingExtra="5sp"
-        android:text="Hello World!" />
+        android:layout_below="@+id/article_heading">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/article_subheading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/deafult_margin"
+                android:text="@string/article_subtitle"
+                android:textAppearance="@android:style/TextAppearance" />
+
+            <TextView
+                android:id="@+id/article"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autoLink="web"
+                android:lineSpacingExtra="5sp"
+                android:text="@string/article_text" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
 
 
 </RelativeLayout>
